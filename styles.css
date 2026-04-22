@@ -1,0 +1,164 @@
+/*Import Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Fraunces:wght@700&display=swap');
+
+/*Root level variables for colors*/
+:root {
+    --clr-primary-green-500: hsl(158, 36%, 37%);
+    --clr-primary-green-700: hsl(158, 42%, 18%);
+    --clr-neutral-black: hsl(212, 21%, 14%);
+    --clr-neutral-grey: hsl(228, 12%, 48%);
+    --clr-neutral-cream: hsl(30, 38%, 92%);
+    --clr-neutral-white: hsl(0, 0%, 100%);
+}
+
+/*Setting up the font family for relevant elements*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+/*Setting up the background colors */
+body {
+    background-color: var(--clr-neutral-cream);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.container {
+    background-color: var(--clr-neutral-white);
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+    width: 100%;
+    border-radius: 0.625rem;
+    overflow: hidden;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content {
+    padding: 1.5rem;
+}
+
+.category {
+    color: var(--clr-neutral-grey);
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.3125rem;
+    text-transform: uppercase;
+    margin: 0 0 1rem 0;
+}
+
+.product-title {
+    color: var(--clr-neutral-black);
+    font-size: 2rem;
+    line-height: 1;
+    margin: 0 0 1rem 0;
+}
+
+.product-description {
+    color: var(--clr-neutral-grey);
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin: 0 0 1.5rem 0;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.price-new {
+    color: var(--clr-primary-green-500);
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.price-original {
+    color: var(--clr-neutral-grey);
+    font-size: 0.875rem;
+    text-decoration: line-through;
+    margin: 0;
+}
+
+.add-to-cart {
+    width: 100%;
+    background-color: var(--clr-primary-green-500);
+    color: var(--clr-neutral-white);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.875rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover,
+.add-to-cart:focus {
+    background-color: var(--clr-primary-green-700);
+    outline: none;
+}
+
+.add-to-cart svg {
+    width: 15px;
+    height: 16px;
+}
+
+/*Desktop layout*/
+@media (min-width: 600px) {
+    .container {
+        flex-direction: row;
+        max-width: 600px;
+    }
+
+    .product-image {
+        width: 50%;
+    }
+
+    .content {
+        width: 50%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .product-title {
+        font-size: 2.5rem;
+    }
+}
+
+/*Styling the attribution class*/
+.attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
