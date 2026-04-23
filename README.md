@@ -16,7 +16,7 @@ This is a solution to the Product preview card component challenge on Frontend M
 3. Consistency - You won't accidentally use slightly different shades
 4. Readability - var(--clr-primary-green-500) is more meaningful than hsl(158, 36%, 37%)
 
-###Useful Resources
+### Useful Resources
 - Frontend Mentor - This helped me to get challenges that are being tackled in the real world and also connects me to an audience of like-minded people who are still new and those experienced.
 - freeCodeCamp - Helps me with learning how to code.
 
